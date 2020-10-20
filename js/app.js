@@ -39,7 +39,7 @@ const ajaxSetting = {
   dataType : 'json'
 };
 
-$.ajax('../data/page-1.json', ajaxSetting).then((data)=>{
+$.ajax('data/page-1.json', ajaxSetting).then((data)=>{
   data.forEach(animalObj => {
     let animal = new Animal(animalObj);
     animal.render();
