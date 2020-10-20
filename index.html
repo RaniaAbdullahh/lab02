@@ -17,22 +17,44 @@
         <select class="keywordsList">
             <option value="default">Filter by Keyword</option>
         </select>
+        <div id='sortDiv'>
+            <input id="title" type="button" value="Sort by Title"></input>
+            <input id="horns" type="button" value="Sort by Horns"></input>
+        </div>
+
+        <div id="pagesDiv">
+            <button id="page1">page 1</button>
+            <button id="page2">bage 2</button>
+        </div>
+
     </header>
 
     <main>
-        <section id="photo-template">
+        <!-- <section id="photo-template">
             <h2></h2>
             <div>
                 <img src="" alt="">
             </div>
             <p></p>
+        </section> -->
+        <section id="photo-template">
+            <h2>{{title}}</title>
+            </h2>
+            <div>
+                <img src="{{image_url}}" alt="{{keyword}}">
+            </div>
+            <p>{{description}}</p>
+
         </section>
+
     </main>
     <footer>
-        &copy; 2020 Code Fellows
+        &copy; 2018 Code Fellows
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="http://unpkg.com/mustache@latest"></script>
+
     <script src="js/app.js"></script>
 </body>
 
